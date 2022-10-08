@@ -1,0 +1,12 @@
+﻿  Closesetpair.cpp
+  Counting_Inversion.cpp
+  main.cpp
+C:\Users\Amr\source\repos\DataStructure\DataStructure\main.cpp(11,23): warning C4244: 'argument': conversion from 'unsigned __int64' to 'const int', possible loss of data
+C:\Users\Amr\source\repos\DataStructure\DataStructure\main.cpp(13,30): warning C4244: 'argument': conversion from 'unsigned __int64' to 'const int', possible loss of data
+C:\Users\Amr\source\repos\DataStructure\DataStructure\main.cpp(16,23): warning C4244: 'argument': conversion from 'unsigned __int64' to 'const int', possible loss of data
+C:\Users\Amr\source\repos\DataStructure\DataStructure\main.cpp(25,23): warning C4244: 'argument': conversion from 'unsigned __int64' to 'const int', possible loss of data
+C:\Users\Amr\source\repos\DataStructure\DataStructure\main.cpp(27,42): warning C4244: 'argument': conversion from 'unsigned __int64' to 'const int', possible loss of data
+C:\Users\Amr\source\repos\DataStructure\DataStructure\main.cpp(30,23): warning C4244: 'argument': conversion from 'unsigned __int64' to 'const int', possible loss of data
+  Generating Code...
+main.obj : error LNK2005: "void __cdecl printArray(int * const,int)" (?printArray@@YAXQEAHH@Z) already defined in Closesetpair.obj
+C:\Users\Amr\source\repos\DataStructure\x64\Debug\DataStructure.exe : fatal error LNK1169: one or more multiply defined symbols found
