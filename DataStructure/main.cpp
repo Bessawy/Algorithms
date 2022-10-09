@@ -35,7 +35,7 @@ void iversionMain()
     cout << "\nInversions: " << count;
 }
 
-// Clises
+// Closest 2D pairs
 void closePairMain()
 {
     vector<point2D> P{{2, 3}, {12, 30}, {40, 50}, {5, 1}, {12, 10}, {3, 4}};
@@ -46,11 +46,36 @@ void closePairMain()
     cout << min_;
 }
 
+// Karatsuba Multiplication
+void Multiply(vector<int> x, vector<int> y, int n)
+{
+    string X = "3141592653589793238462643383279502884197169399375105820974944592";
+    string Y = "2718281828459045235360287471352662497757247093699959574966967627";
+    int size = X.length();
+
+    vector<int> X_int;
+    vector<int> Y_int;
+
+    for (int i = 0; i < size; ++i)
+    {
+        X_int.push_back(int(X[i] - '0'));
+        Y_int.push_back(int(Y[i] - '0'));
+    }
+
+    vector<int> sum = kara_Multi(X_int, Y_int);
+
+    for (int i = 0; i < sum.size(); ++i)
+    {
+        cout << sum[i];
+    }
+
+}
 
 int main()
 {
-    vector<int> Vec{ 1, 2, 3, 4 };
-    closePairMain();
+
+
+
 
     return 0;
 }

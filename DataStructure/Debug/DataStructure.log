@@ -1,6 +1,8 @@
-﻿  Closesetpair.cpp
-C:\Users\Amr\source\repos\DataStructure\DataStructure\Closesetpair.cpp(22,27): warning C4018: '<=': signed/unsigned mismatch
-C:\Users\Amr\source\repos\DataStructure\DataStructure\Closesetpair.cpp(24,36): warning C4018: '<=': signed/unsigned mismatch
-C:\Users\Amr\source\repos\DataStructure\DataStructure\Closesetpair.cpp(40,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Amr\source\repos\DataStructure\DataStructure\Closesetpair.cpp(42,25): warning C4018: '<': signed/unsigned mismatch
+﻿  karatsuba.cpp
+C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(51,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(56,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(100,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(140,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(145,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(168,20): warning C4018: '<': signed/unsigned mismatch
   DataStructure.vcxproj -> C:\Users\Amr\source\repos\DataStructure\Debug\DataStructure.exe
