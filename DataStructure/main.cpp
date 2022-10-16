@@ -21,18 +21,32 @@ void sortMain()
 // Iversion using MergeSort
 void iversionMain()
 {
-    int array[] = { 9, 3, 5, 8, 1 };
-    auto size = sizeof(array) / sizeof(array[0]);
+    std::ifstream textfile;
+    int val = 0;
+    vector<int> integars;
+    textfile.open("IntArray.txt");
 
-    cout << "Array: \n";
-    printArray(array, size);
+    cout << "The file is open! : " << textfile.is_open() << endl;
+    for (std::string line; getline(textfile, line); )
+    {
+        val = stoi(line);
+        integars.push_back(val);
+    }
 
-    int count = count_inv(array, 0, size - 1);
+    int* array = &integars[0];
+    auto size = integars.size();
 
-    cout << "\nSorted Array: \n";
-    printArray(array, size);
+    // Commented since array is too large
+    // cout << "Array: \n";
+    // printArray(array, size);
+    // cout << endl;
+    long long int count = count_inv(array, 0, size - 1);
+
+    // cout << "\nSorted Array: \n";
+    // printArray(array, size);
 
     cout << "\nInversions: " << count;
+
 }
 
 // Closest 2D pairs
@@ -71,10 +85,38 @@ void Multiply(vector<int> x, vector<int> y, int n)
 
 }
 
+// Quicksort
+void Quicksort_()
+{
+    std::ifstream textfile;
+    int val = 0;
+    vector<int> integars;
+    textfile.open("Quicksort.txt");
+
+    cout << "The file is open! : " << textfile.is_open() << endl;
+    for (std::string line; getline(textfile, line); )
+    {
+        val = stoi(line);
+        integars.push_back(val);
+    }
+
+    int* arr = &integars[0];
+    auto size = integars.size();
+
+    //int arr[] = { 2, 4, 3, 8, 7};
+    //int size = sizeof(arr) / sizeof(arr[0]);
+
+    QuickSort sort_arr;
+    sort_arr.compar_count = 0;
+    sort_arr.sort(arr, 0, size - 1);
+
+    printArray(arr, size);
+
+    cout << endl << "Comparison count: " << sort_arr.compar_count;
+}
+
 int main()
 {
-
-
 
 
     return 0;

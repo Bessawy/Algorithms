@@ -33,6 +33,12 @@
     <ClCompile Include="karatsuba.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Evaluate_Division.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Quicksort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils.h">

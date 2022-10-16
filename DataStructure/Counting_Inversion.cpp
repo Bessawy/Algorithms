@@ -1,9 +1,9 @@
 // C++ program for counting inversion using Divide and Conquer
+#include "main.h"
 
-
-int count_mid_inv(int array[], const int begin, const int mid, const int end)
+long long count_mid_inv(int array[], const int begin, const int mid, const int end)
 {
-	int count = 0;
+	long long count = 0;
 	const int arrSize_1 = mid - begin + 1;
 	const int arrSize_2 = end - mid;
 
@@ -52,23 +52,29 @@ int count_mid_inv(int array[], const int begin, const int mid, const int end)
 	delete[] arr_1;
 	delete[] arr_2;
 
+	if (count < 0)
+	{
+		cout << count;
+	}
 
 	return count;
 }
 
 
-int count_inv(int array[], const int begin, const int end)
+long long count_inv(int array[], const int begin, const int end)
 {
 	if (begin >= end)
+	{
 		return 0;
+	}
 	else
 	{
 		int const mid = begin + (end - begin) / 2;
-		int first_inv = count_inv(array, begin, mid);
-		int second_inv = count_inv(array, mid + 1, end);
-		int mid_inv = count_mid_inv(array, begin, mid, end);
-
-		return  first_inv + second_inv + mid_inv;
+		long long first_inv = count_inv(array, begin, mid);
+		long long second_inv = count_inv(array, mid + 1, end);
+		long long mid_inv = count_mid_inv(array, begin, mid, end);
+		
+		return first_inv + mid_inv + second_inv;
 	}
 }
 

@@ -8,11 +8,16 @@
 #include <vector>
 #include <algorithm>
 #include <cmath>
+#include <fstream>
+#include <map>
+#include <list>
+#include <set>
+
 using namespace std;
 
 // counting iversion function
-int count_mid_inv(int array[], const int begin, const int mid, const int end);
-int count_inv(int array[], const int begin, const int end);
+long long count_mid_inv(int array[], const int begin, const int mid, const int end);
+long long count_inv(int array[], const int begin, const int end);
 
 
 // sort function
@@ -39,4 +44,28 @@ vector<int> sum_vec(vector<int> x, vector<int> y);
 vector<int> sub_vec(vector<int> x, vector<int> y);
 vector<int> multi_vec(vector<int> x, vector<int> y);
 vector<int> pow_10(vector<int>& x, int n);
+
+//QuickSort
+class QuickSort
+{
+	enum pivot_type
+	{
+		first,
+		last,
+		median,
+		random
+	};
+
+	pivot_type pivot = median; //default
+
+public:
+	long long compar_count = 0;
+
+	void sort(int arr[], const int start, const int end);
+	int getPivot(int arr[], const int start, const int end);
+	int partition(int arr[], const int start, const int end, const int pivot);
+};
+
+
+
 #endif

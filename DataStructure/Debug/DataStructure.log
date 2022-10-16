@@ -1,8 +1,3 @@
-﻿  karatsuba.cpp
-C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(51,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(56,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(100,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(140,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(145,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Amr\source\repos\DataStructure\DataStructure\karatsuba.cpp(168,20): warning C4018: '<': signed/unsigned mismatch
+﻿  main.cpp
+C:\Users\Amr\source\repos\DataStructure\DataStructure\main.cpp(81,23): warning C4018: '<': signed/unsigned mismatch
   DataStructure.vcxproj -> C:\Users\Amr\source\repos\DataStructure\Debug\DataStructure.exe
