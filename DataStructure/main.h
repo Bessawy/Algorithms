@@ -66,6 +66,9 @@ public:
 	int partition(int arr[], const int start, const int end, const int pivot);
 };
 
-
+//Randomize select
+int getRandomizedPivot(const int start, const int end);
+int randomPartition(int arr[], const int start, const int end, const int pivot);
+int randomSelect(int arr[], const int start, const int end, const int ith);
 
 #endif

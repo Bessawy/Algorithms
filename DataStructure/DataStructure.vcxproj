@@ -130,6 +130,7 @@
     <ClCompile Include="Closesetpair.cpp" />
     <ClCompile Include="Evaluate_Division.cpp" />
     <ClCompile Include="Quicksort.cpp" />
+    <ClCompile Include="RSelect.cpp" />
     <ClCompile Include="Sorting.cpp" />
     <ClCompile Include="Counting_Inversion.cpp" />
     <ClCompile Include="main.cpp" />

@@ -115,9 +115,18 @@ void Quicksort_()
     cout << endl << "Comparison count: " << sort_arr.compar_count;
 }
 
+// Rselect
+void Rselect_() {
+    int array[] = { 10, 9, 3, 5, 8 };
+    auto size = sizeof(array) / sizeof(array[0]);
+    int ith = 3;
+    int value = randomSelect(array, 0, size - 1, ith);
+    cout << "The smallest: " << value;
+}
+
 int main()
 {
-
-
+    
+    Rselect_();
     return 0;
 }
